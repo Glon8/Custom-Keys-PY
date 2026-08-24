@@ -9,6 +9,7 @@ from .values import op
 
 k = K()
 
+
 # ===================================< SWITCH
 # dic - dictionary to use
 # key - from the dictionary to flip

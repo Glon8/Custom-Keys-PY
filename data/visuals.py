@@ -7,6 +7,8 @@ from rich.console import Console
 from .values import op, seperator
 
 console = Console()
+
+
 # ===================================< VISUALS
 def render():
     if platform.system() == 'Windows':
