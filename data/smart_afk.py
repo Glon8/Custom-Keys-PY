@@ -4,7 +4,7 @@ import time
 
 from rich.console import Console
 
-from .values import op, seperator
+from .values import op, _SEPERATOR
 from .helpers import switch, key_press
 from .visuals import render
 
@@ -36,7 +36,7 @@ def afk_reset_timer():
     keys = ['w', 'a', 's', 'd']
     interactions = random.randint(2, 6)
 
-    console.print(seperator + f' Keys Auto AFK Sequence')
+    console.print(_SEPERATOR + f' Keys Auto AFK Sequence')
 
     for i in range(interactions):
         rand_key = random.randint(0, 3)

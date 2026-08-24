@@ -52,7 +52,6 @@ _OPERATIONS = [
 _SEPERATOR = f"===========================<"
 
 op = _OPERATIONS
-seperator = _SEPERATOR
 
 
 def getTm():

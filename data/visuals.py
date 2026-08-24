@@ -4,7 +4,7 @@ import time
 
 from rich.console import Console
 
-from .values import op, seperator
+from .values import op, _SEPERATOR
 
 console = Console()
 
@@ -22,7 +22,7 @@ def render():
     for thing in op:
         for att, stat in thing.items():
             if att == 'name':
-                console.print(seperator + ' ' + str(stat))
+                console.print(_SEPERATOR + ' ' + str(stat))
             elif att == 'key_action' or att == 'key_trigger' or att == 'text' or att == 'path_from' or att == 'path_to' or att == 'note' or att == 'display' or att == 'dir_files':
                 console.print(f"{att} : {stat}")
             elif att == 'count':
